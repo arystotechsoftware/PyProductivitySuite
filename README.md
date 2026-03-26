@@ -1,10 +1,10 @@
 # ArystoTech Productivity Suite
 
-Freeware desktop utility apps built with Python and PySide6.
+Freeware desktop utility apps for everyday file, image, data, and log workflows.
 
 ## Overview
 
-This repository ships one bundle app plus six standalone desktop tools:
+The Productivity Suite includes one bundle app plus six standalone desktop tools:
 
 - `PySuperApp`: one shell that includes all six tools
 - `PyBulkRenamer`: bulk file renaming with preview
@@ -20,11 +20,11 @@ This repository ships one bundle app plus six standalone desktop tools:
 
 Bundle all six workflows into one desktop app with Home, per-tool tabs, and About screens.
 
-Launcher:
+Highlights:
 
-```bash
-python PySuperApp.py
-```
+- one place to access all six utility apps
+- local-first workflow for common desktop tasks
+- individual app details and support information built in
 
 ### PyBulkRenamer
 
@@ -36,12 +36,6 @@ Highlights:
 - conflict detection before rename
 - safer two-phase rename flow
 
-Launcher:
-
-```bash
-python PyBulkRenamer.py
-```
-
 ### PyImageSquisher
 
 Compress images without overwriting the originals.
@@ -51,12 +45,6 @@ Highlights:
 - single-image or bulk queue workflow
 - JPEG, PNG, and WEBP output
 - max-width and quality controls
-
-Launcher:
-
-```bash
-python PyImageSquisher.py
-```
 
 ### PyImageConverter
 
@@ -68,12 +56,6 @@ Highlights:
 - SVG rendering support
 - format-aware export settings and optimization
 
-Launcher:
-
-```bash
-python PyImageConverter.py
-```
-
 ### PyJson2CsvConverter
 
 Convert JSON files or pasted JSON into flat CSV output.
@@ -83,12 +65,6 @@ Highlights:
 - nested structure detection
 - dot-notation flattening
 - configurable CSV delimiters
-
-Launcher:
-
-```bash
-python PyJson2CsvConverter.py
-```
 
 ### PyJsonXmlFormatter
 
@@ -100,16 +76,6 @@ Highlights:
 - pretty-print and minify actions
 - searchable modal output view
 
-Launcher:
-
-```bash
-python PyJsonXmlFormatter.py
-```
-
-Compatibility note:
-
-- `PyJsonBeautifier.py` remains in the repo as a compatibility launcher for the renamed formatter
-
 ### PyLogExtractor
 
 Extract matching lines from large logs or text files.
@@ -119,12 +85,6 @@ Highlights:
 - plain-text or regex search
 - case-sensitive or case-insensitive matching
 - line-by-line processing for large files
-
-Launcher:
-
-```bash
-python PyLogExtractor.py
-```
 
 ## Freeware Model
 
@@ -136,21 +96,3 @@ Optional support links in the apps point to:
 
 - [buymeacoffee.com/arystotech](https://buymeacoffee.com/arystotech)
 - [arystotech.com/productivity_suite](https://arystotech.com/productivity_suite)
-
-## Run From Source
-
-Install dependencies:
-
-```bash
-pip install PySide6 Pillow cryptography
-```
-
-Run the bundle or any standalone launcher shown above.
-
-## Build
-
-Use the provided packaging script:
-
-```bat
-compile_all.bat
-```
